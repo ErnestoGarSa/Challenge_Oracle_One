@@ -12,15 +12,15 @@ const clickEncriptar = () => {
   let encriptadaArray = [];
 
   for (let i = 0; i < originalArray.length; i++) {
-    if (originalArray[i] === "a") {
+    if (originalArray[i] === "a" || originalArray[i] === "á") {
       encriptadaArray.push("ai");
-    } else if (originalArray[i] === "e") {
+    } else if (originalArray[i] === "e" || originalArray[i] === "é") {
       encriptadaArray.push("enter");
-    } else if (originalArray[i] === "i") {
+    } else if (originalArray[i] === "i" || originalArray[i] === "í") {
       encriptadaArray.push("imes");
-    } else if (originalArray[i] === "o") {
+    } else if (originalArray[i] === "o" || originalArray[i] === "ó") {
       encriptadaArray.push("ober");
-    } else if (originalArray[i] === "u") {
+    } else if (originalArray[i] === "u" || originalArray[i] === "ú") {
       encriptadaArray.push("ufat");
     } else {
       encriptadaArray.push(originalArray[i]);
